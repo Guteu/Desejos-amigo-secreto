@@ -1,0 +1,115 @@
+:root {
+    --PIBWidth: 95vw;
+}
+
+.presentBox {
+    padding: 10px;
+    width: 150px;
+    height: 190px;
+    background-color: #BF0426;
+
+
+    border: 5px solid black;
+    border-radius: 20px;
+}
+.presentBox h1 {
+    font-size: 20px;
+}
+@media screen and (min-width: 800px) {
+    .presentBox h1 {
+        font-size: 30px;
+    }
+}
+
+.imageContainer {
+    min-width: 150px;
+    max-height: 150px;
+}
+
+.imageContainer img {
+    width: 100%;
+    max-height: 140px;
+}
+/*computador*/
+@media screen and (min-width: 650px) {
+    .presentBox {
+        width: 230px;
+        height: 310px;
+    }
+    .imageContainer {
+        min-width: 100px;
+    }
+    .imageContainer img {
+        width: 100%;
+        max-height: 260px;
+    }
+}
+
+.presentInfoBox {
+    position: fixed;
+    top: 10px;
+    left: calc(50% - calc(var(--PIBWidth) / 2) - 5px);
+    
+    background-color: #BF0426;
+    border: 5px solid black;
+    border-radius: 20px;
+    width: var(--PIBWidth);
+    height: calc(100vh - 30px);    
+}
+
+.presentInfoBox article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.presentInfoBox article h1 {
+    font-size: 27px;
+}
+.presentInfoBox article p {
+    font-size: 18px;
+    -webkit-text-stroke: 0.5px black;
+    font-weight: bolder;
+    color: white;
+}
+
+/*computador*/
+@media screen and (min-width: 650px) {
+    .presentInfoBox article h1 {
+        font-size: 40px;
+    }
+}
+
+.PBoxButton {
+    width: 100px;
+    height: 100px;
+    font-size: 70px;
+
+    z-index: 100;
+    position: fixed;
+    top: 20px;
+    left: calc(50% - calc(var(--PIBWidth) / 2) + 10px);
+
+    border-radius: 50%;
+}
+@media screen and (max-width: 800px) {
+    .PBoxButton {
+        top: calc(80vh + 15px);
+        left: calc(50% - 50px);
+    }
+}
+
+.fotosBox {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+
+    max-width: 40vw;
+    min-width: 300px;
+    max-height: 40vh;
+}
+.fotosBox img {
+    width: 100%;
+    max-height: 40vh;
+}
