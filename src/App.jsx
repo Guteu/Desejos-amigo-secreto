@@ -5,19 +5,17 @@ import Header from './components/header/Header'
 import pix01 from './assets/pix.png'
 import pix02 from './assets/pix2.png'
 import pix03 from './assets/pix3.jpg'
-import chuteira from './assets/chuteiraFutsal.png'
-import chuteira02 from './assets/chuteira2.jpg'
-import mouseGamer from './assets/mouseGamer.jpg'
-import mouseGamer02 from './assets/mouse2.webp'
-import camisaProgramador from './assets/camisaProgramador.png'
-import camisaProgramador02 from './assets/camisaProgramador2.webp'
-import camisaProgramador03 from './assets/camisaProgramador3.webp'
-import bolaFutsal from './assets/bolaFutsal.png'
-import bolaFutsal02 from './assets/bolaFutsal2.jpg'
-import usbHub from './assets/usbHub.webp'
-import usbHub02 from './assets/usbHubRuim.png'
 import microfone from './assets/microfone.webp'
 import microfone02 from './assets/microfone2.webp'
+import organizador from './assets/organizador.webp'
+import organizador02 from './assets/organizador2.jpg'
+import caboMultiportas from './assets/caboMultiportas.jpg'
+import caboMultiportas02 from './assets/caboMultiportas2.webp'
+import luvaGoleiro from './assets/luvaGoleiro.webp'
+import luvaGoleiro02 from './assets/luvaGoleiro2.webp'
+import smartWatch from './assets/smartWatch.png'
+import smartWatch02 from './assets/smartWatch2.webp'
+import smartWatch03 from './assets/smartWatch3.jpg'
 
 
 function App() {
@@ -27,30 +25,30 @@ function App() {
 		pix01,
 		pix02
 	]
-	let presentChuteira = [
-		chuteira02,
-		chuteira
-	]
-	let presentMouseGamer = [
-		mouseGamer,
-		mouseGamer02
-	]
-	let presentCamisaProgramador = [
-		camisaProgramador,
-		camisaProgramador02,
-		camisaProgramador03
-	]
-	let presentBolaFutsal = [
-		bolaFutsal,
-		bolaFutsal02
-	]
-	let presentUsbHub = [
-		usbHub02,
-		usbHub
-	]
 	let presentMicrofone = [
 		microfone,
 		microfone02
+	]
+
+	let presentOrganizador = [
+		organizador,
+		organizador02
+	]
+
+	let presentCaboMultiportas = [
+		caboMultiportas,
+		caboMultiportas02
+	]
+
+	let presentLuvaGoleiro = [
+		luvaGoleiro,
+		luvaGoleiro02
+	]
+
+	let presentSmartWatch = [
+		smartWatch,
+		smartWatch02,
+		smartWatch03
 	]
 
 	return (
@@ -58,12 +56,28 @@ function App() {
 			<Header />
 			<main>
 				<PresentBox name="Pix" imgURL={pix01} whereToFind="no seu app do banco" details="O amigo secreto é de 50 reais, mas lembre-se que o céu é o limite. Minha chave pix é meu email: danielguerra1711@gmail.com" images={presentPix} />
-				<PresentBox name="Chuteira de Futsal" imgURL={chuteira02} whereToFind="Tanto online quanto em loja fisica, como a umbro e a nike" details="Eu calço 39-40. As chuteiras de futsal da umbro são as melhores" images={presentChuteira} />
-				<PresentBox name="Mouse Gamer" imgURL={mouseGamer02} whereToFind="loja online como kabum, amazon e mercado livre" details="eu não me importo com o led no mouse, mas esses botões laterais são bem legais" images={presentMouseGamer} />
-				<PresentBox name="Camisa de Programação" imgURL={camisaProgramador} whereToFind="loja online" details="O tamanho das minhas camisas é M. Se não conseguir achar o da imagem tudo bem, mas eu quero uma preta, porque a minha branca suja muito facil, se tiver while (alive) ou while (!dead) na camisa, não pode ter repeat" images={presentCamisaProgramador} />
-				<PresentBox name="Bola de Futsal" imgURL={bolaFutsal} whereToFind="loja online ou fisica, como adidas, nike, penalty ou decathlon" details="Prefiro bola de futsal mas eu aceito de futebol tambem, e eu não quero a bola mini" images={presentBolaFutsal} />
-				<PresentBox name="USB hub de qualidade" imgURL={usbHub} whereToFind="loja online tipo mercado livre e a amazon" details="USB hub barato é ruim e dura menos de um mês, então não compre os de 15 reais porque só vão durar 15 dias" images={presentUsbHub} />
-				<PresentBox name="Microfone de mesa USB" imgURL={microfone} whereToFind="loja online tipo mercado livre e a amazon" details="O microfone tem que ser USB, porque eu uso notebook" images={presentMicrofone} />
+
+				<PresentBox name="Microfone de mesa USB" imgURL={microfone} whereToFind="lojas online tipo mercado livre e amazon ou lojas fisicas como a kalunga e lojas de eletrônicos" details="O microfone tem que ser USB, porque eu uso notebook" images={presentMicrofone} />
+
+				<PresentBox name="⭐organizador de acessorios eletronicos" 
+				imgURL={organizador} images={presentOrganizador}
+				whereToFind="Lojas online como Amazon, mercado livre, shopee, shein etc ou talvez até no shopping" 
+				details="mochila/caixa/necessé/bolsa/estojo/organizador de armazenamento de acessórios eletrônicos" />
+
+				<PresentBox name="cabo 3 em 1"
+				imgURL={caboMultiportas} images={presentCaboMultiportas}
+				whereToFind="Lojas online como Amazon, mercado livre, shopee etc ou lojas de eletrônicos" 
+				details="Cabo 3 em 1 (type-c, lightning e micro USB), tem um modelo que vi na shopee que é o 'Kit Cabos Celular Adaptador Múltiplo Portátil 60w 6 Em 1' que eu tambem achei interessante" />
+
+				<PresentBox name="⭐Luva de goleiro"
+				imgURL={luvaGoleiro} images={presentLuvaGoleiro}
+				whereToFind="Lojas de artigos esportivos ou lojas online como Amazon, mercado livre, shopee etc" 
+				details="Luva de goleiro tamanho 8, ja que minha mão mede 17,5 cm altura e 7,5 cm diametro (sem contar o dedao)" />
+
+				<PresentBox name="⭐Smart Watch"
+				imgURL={smartWatch} images={presentSmartWatch}
+				whereToFind="Lojas online como Amazon, mercado livre, shopee etc" 
+				details="Não me importo com a marca, mas quanto mais coisa ele fazer melhor" />
 			</main>
 			
 		</>

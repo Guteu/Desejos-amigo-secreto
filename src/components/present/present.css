@@ -7,6 +7,7 @@
     width: 150px;
     height: 190px;
     background-color: #BF0426;
+    overflow-y: hidden;
 
 
     border: 5px solid black;
@@ -72,12 +73,18 @@
     -webkit-text-stroke: 0.5px black;
     font-weight: bolder;
     color: white;
+    overflow-wrap: break-word;
+    max-width: calc(100% - 20px);
 }
 
 /*computador*/
 @media screen and (min-width: 650px) {
     .presentInfoBox article h1 {
         font-size: 40px;
+    }
+    .presentInfoBox article p {
+        max-width: 70vw;
+
     }
 }
 
